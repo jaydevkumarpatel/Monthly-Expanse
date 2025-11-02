@@ -87,11 +87,13 @@ def test_monthly_report():
 
 def test_export():
     """Test CSV export functionality."""
+    import tempfile
+    
     tracker = ExpenseTracker()
     tracker.load_csv('sample_statement.csv')
     
     print("\nTesting CSV export...")
-    test_output = '/tmp/test_report.csv'
+    test_output = os.path.join(tempfile.gettempdir(), 'test_report.csv')
     tracker.export_report_to_csv(test_output, 2024, 10)
     
     if os.path.exists(test_output):
@@ -109,8 +111,9 @@ def main():
     print("EXPENSE TRACKER TEST SUITE")
     print("=" * 60)
     
-    # Change to script directory
-    os.chdir('/home/runner/work/Monthly-Expanse/Monthly-Expanse')
+    # Change to script directory for cross-platform compatibility
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(script_dir)
     
     results = []
     results.append(("Categorization", test_categorization()))

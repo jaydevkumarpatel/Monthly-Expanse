@@ -16,12 +16,12 @@ class ExpenseTracker:
     
     # Common expense categories with keywords
     CATEGORIES = {
-        'Food & Dining': ['restaurant', 'cafe', 'food', 'dining', 'pizza', 'burger', 'coffee', 'starbucks', 'mcdonald'],
+        'Food & Dining': ['restaurant', 'cafe', 'food', 'dining', 'pizza', 'burger', 'coffee', 'starbucks', 'mcdonald', 'mcdonalds'],
         'Groceries': ['grocery', 'supermarket', 'walmart', 'target', 'whole foods', 'trader joe', 'costco', 'safeway'],
         'Transportation': ['gas', 'fuel', 'uber', 'lyft', 'taxi', 'parking', 'transit', 'metro', 'bus'],
         'Shopping': ['amazon', 'ebay', 'shop', 'store', 'mall', 'retail', 'clothing', 'fashion'],
         'Entertainment': ['movie', 'cinema', 'theater', 'netflix', 'spotify', 'gaming', 'entertainment', 'hulu'],
-        'Utilities': ['electric', 'water', 'gas utility', 'internet', 'phone', 'mobile', 'cable', 'utility'],
+        'Utilities': ['electric', 'water', 'internet', 'phone', 'mobile', 'cable', 'utility bill'],
         'Healthcare': ['pharmacy', 'doctor', 'hospital', 'medical', 'health', 'clinic', 'cvs', 'walgreens'],
         'Travel': ['hotel', 'airline', 'flight', 'airbnb', 'booking', 'travel', 'vacation'],
         'Bills & Fees': ['insurance', 'subscription', 'membership', 'fee', 'bill', 'payment'],
